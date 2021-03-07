@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_wqeJ4H3jEeu0p-jBpikfYQ" name="Practica2UML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_wvIAYH3jEeu0p-jBpikfYQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ziqfAH3jEeu0p-jBpikfYQ" name="clases.ito.poo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2eungH3jEeu0p-jBpikfYQ" name="CuentaBancaria">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CYd1oH3kEeu0p-jBpikfYQ" name="numCuenta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DkdHoH3kEeu0p-jBpikfYQ" name="nomCliente" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EJaO0H3kEeu0p-jBpikfYQ" name="sueldo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EyAf4H3kEeu0p-jBpikfYQ" name="fechaApertura" visibility="private" type="_EfhzUH3lEeu0p-jBpikfYQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XM6JYH3uEeu0p-jBpikfYQ" name="fechaActualizacicon" visibility="private" type="_EfhzUH3lEeu0p-jBpikfYQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9tOYEH3vEeu0p-jBpikfYQ" name="deposito">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_U-RcsH3wEeu0p-jBpikfYQ" name="cantidad">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-SHN0H3vEeu0p-jBpikfYQ" name="retiro">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_M3a7kH8HEeuex9XMC_RajA" name="cantidad">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_EfhzUH3lEeu0p-jBpikfYQ" name="java.time.LocalDate"/>
+</uml:Model>
