@@ -19,11 +19,11 @@ public class cuentaBancaria {
 	 */
 	private long numCuenta = 0L;
 
-public cuentaBancaria(long numCuenta, String nomCliente, float sueldo, LocalDate fechaApertura) {
+public cuentaBancaria(long numCuenta, String nomCliente, float saldo, LocalDate fechaApertura) {
 	super();
 	this.numCuenta = numCuenta;
 	this.nomCliente = nomCliente;
-	this.sueldo = sueldo;
+	this.saldo = saldo;
 	this.fechaApertura = fechaApertura;
 }
 
@@ -33,9 +33,9 @@ public cuentaBancaria(long numCuenta, String nomCliente, float sueldo, LocalDate
 	private String nomCliente = "";
 
 	/**
-	 * Description of the property sueldo.
+	 * Description of the property saldo.
 	 */
-	private float sueldo = 0F;
+	private float saldo = 0F;
 
 	/**
 	 * Description of the property fechaApertura.
@@ -90,16 +90,16 @@ public cuentaBancaria(long numCuenta, String nomCliente, float sueldo, LocalDate
 	 * Returns sueldo.
 	 * @return sueldo 
 	 */
-	public float getSueldo() {
-		return this.sueldo;
+	public float getSaldo() {
+		return this.saldo;
 	}
 
 	/**
 	 * Sets a value to attribute sueldo. 
 	 * @param newSueldo 
 	 */
-	public void setSueldo(float newSueldo) {
-		this.sueldo = newSueldo;
+	public void setSueldo(float newSaldo) {
+		this.saldo = newSaldo;
 	}
 
 	/**
@@ -134,9 +134,31 @@ public cuentaBancaria(long numCuenta, String nomCliente, float sueldo, LocalDate
 		this.fechaActualizacicon = newFechaActualizacicon;
 	}
 
+	 public boolean retiro (float cantidad) {
+			boolean retiro=false;
+			if(this.saldo>=cantidad) {
+			this.saldo-=cantidad;
+			retiro=true;
+			this.fechaActualizacicon=LocalDate.now();
+			}
+			 return retiro;
+		 }
+	 
+	 
+	 public boolean deposito (float cantidad) {
+			boolean retiro=false;
+			if(this.saldo>=cantidad) {
+			this.saldo+=cantidad;
+			retiro=true;
+			this.fechaActualizacicon=LocalDate.now();
+			}
+			 return retiro;
+		 }
+	 
+	 
 	@Override
 	public String toString() {
-		return "cuentaBancaria [numCuenta=" + numCuenta + ", nomCliente=" + nomCliente + ", sueldo=" + sueldo
+		return "cuentaBancaria [numCuenta=" + numCuenta + ", nomCliente=" + nomCliente + ", saldo=" + saldo
 				+ ", fechaApertura=" + fechaApertura + ", fechaActualizacicon=" + fechaActualizacicon + "]";
 	}
 

@@ -11,7 +11,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_DkdHoH3kEeu0p-jBpikfYQ" name="nomCliente" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_EJaO0H3kEeu0p-jBpikfYQ" name="sueldo" visibility="private">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EJaO0H3kEeu0p-jBpikfYQ" name="saldo" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_EyAf4H3kEeu0p-jBpikfYQ" name="fechaApertura" visibility="private" type="_EfhzUH3lEeu0p-jBpikfYQ"/>
@@ -20,10 +20,16 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_U-RcsH3wEeu0p-jBpikfYQ" name="cantidad">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ES86wIFlEeuYA5ofbpA_Fg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_-SHN0H3vEeu0p-jBpikfYQ" name="retiro">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_M3a7kH8HEeuex9XMC_RajA" name="cantidad">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ICjZAIFlEeuYA5ofbpA_Fg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
